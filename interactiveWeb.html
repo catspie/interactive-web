@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web</title>
+    <style>
+      body{
+        background: #222;
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+        padding-top: 220px;
+      }
+      @keyframes egg-ani {
+        to {
+            background-position: -2550px 0;
+        }
+      }
+      .egg{
+        width: 100px;
+        height: 150px;
+        background: url("images/egg.jpg") no-repeat 0 0 /auto 150px;
+        animation: egg-ani 1.5s infinite steps(18);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="egg"></div>
+    </div>
+  </body>
+</html>
